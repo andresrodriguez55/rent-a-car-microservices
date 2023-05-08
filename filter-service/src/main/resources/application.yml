@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: filter-service
+  data:
+    mongodb:
+      database: turkcell-filterdb
+      uri: mongodb://localhost:27017
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+    prefer-ip-address: true
+server:
+  port: 0

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  kafka:
+    image: bashj79/kafka-kraft
+    ports:
+      - "9092:9092"
+    volumes:
+      - kafka_data:/apt/kafka/kafka-logs
+
+  mongodb:
+    container_name: turkcell-filterdb
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+volumes:
+  kafka_data:
+  mongodb_data:
