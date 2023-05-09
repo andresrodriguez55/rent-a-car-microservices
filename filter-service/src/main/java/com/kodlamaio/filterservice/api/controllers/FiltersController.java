@@ -6,10 +6,8 @@ import com.kodlamaio.filterservice.business.dto.responses.GetFilterResponse;
 import com.kodlamaio.filterservice.entities.Filter;
 import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.UUID;
 
@@ -24,10 +22,10 @@ public class FiltersController
     public void createDb()
     {
         System.err.println("post construct!!!!!");
-        var filter = new Filter();
-        filter.setBrandName("fsgs");
-        filter.setModelName("gdsgds");
-        service.add(filter);
+        //var filter = new Filter();
+        //filter.setBrandName("fsgs");
+        //filter.setModelName("gdsgds");
+        //service.add(filter);
     }
 
     @GetMapping
@@ -41,4 +39,5 @@ public class FiltersController
     {
         return service.getById(id);
     }
+
 }

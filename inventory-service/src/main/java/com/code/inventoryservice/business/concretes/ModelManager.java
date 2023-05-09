@@ -1,5 +1,8 @@
 package com.code.inventoryservice.business.concretes;
 
+import com.code.commonpackage.events.inventory.CarCreatedEvent;
+import com.code.commonpackage.events.inventory.CarDeletedEvent;
+import com.code.commonpackage.events.inventory.ModelDeletedEvent;
 import com.code.commonpackage.utils.mappers.ModelMapperService;
 import com.code.inventoryservice.business.abstracts.ModelService;
 import com.code.inventoryservice.business.dto.requests.create.CreateModelRequest;
@@ -10,6 +13,7 @@ import com.code.inventoryservice.business.dto.responses.get.GetModelResponse;
 import com.code.inventoryservice.business.dto.responses.update.UpdateModelResponse;
 import com.code.inventoryservice.business.rules.ModelBusinessRules;
 import com.code.inventoryservice.entities.Model;
+import com.code.inventoryservice.kafka.producer.InventoryProducer;
 import com.code.inventoryservice.repository.ModelRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -24,6 +28,7 @@ public class ModelManager implements ModelService
     private final ModelRepository repository;
     private final ModelMapperService mapper;
     private final ModelBusinessRules rules;
+    private final InventoryProducer producer;
 
     @Override
     public List<GetAllModelsResponse> getAll()
@@ -75,5 +80,7 @@ public class ModelManager implements ModelService
     {
         rules.checkIfModelExists(id);
         repository.deleteById(id);
+
+        producer.sendMessage(new ModelDeletedEvent(id));
     }
 }

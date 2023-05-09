@@ -55,15 +55,22 @@ public class FilterManager implements FilterService
         repository.deleteById(id);
     }
 
+
     @Override
     public void deleteAllByBrandId(UUID brandId)
     {
+        repository.deleteAllByBrandId(brandId);
+    }
 
+    @Override
+    public void deleteByCarId(UUID carId)
+    {
+        repository.deleteByCarId(carId);
     }
 
     @Override
     public void deleteAllByModelId(UUID modelId)
     {
-
+        repository.deleteAllByModelId(modelId);
     }
 }

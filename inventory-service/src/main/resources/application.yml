@@ -11,6 +11,11 @@ spring:
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
+    kafka:
+        producer:
+            bootstrap-servers: http://localhost:9092
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 eureka:
     client:
         fetch-registry: true

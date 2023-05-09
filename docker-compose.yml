@@ -8,6 +8,7 @@ services:
     volumes:
       - kafka_data:/apt/kafka/kafka-logs
 
+
   mongodb:
     container_name: turkcell-filterdb
     image: mongo

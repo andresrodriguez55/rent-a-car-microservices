@@ -5,6 +5,17 @@ spring:
     mongodb:
       database: turkcell-filterdb
       uri: mongodb://localhost:27017
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      bootstrap-servers: http://localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 eureka:
   client:
     fetch-registry: true
