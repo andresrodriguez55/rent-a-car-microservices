@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/inventory-service/inventory-service.iml" filepath="$PROJECT_DIR$/inventory-service/inventory-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/filter-service/src/main/main.iml" filepath="$PROJECT_DIR$/filter-service/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservices.iml" filepath="$PROJECT_DIR$/microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rental-service/rental-service.iml" filepath="$PROJECT_DIR$/rental-service/rental-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/filter-service/src/test/test.iml" filepath="$PROJECT_DIR$/filter-service/src/test/test.iml" />
     </modules>
   </component>

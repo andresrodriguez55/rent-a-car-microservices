@@ -1,13 +1,12 @@
 package com.kodlamaio.filterservice.business.concretes;
 
-import com.code.commonpackage.utils.mappers.ModelMapperService;
+import com.kodlamaio.commonpackage.utils.mappers.ModelMapperService;
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import com.kodlamaio.filterservice.business.dto.responses.GetAllFiltersResponse;
 import com.kodlamaio.filterservice.business.dto.responses.GetFilterResponse;
 import com.kodlamaio.filterservice.entities.Filter;
 import com.kodlamaio.filterservice.repository.FilterRepository;
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,7 +44,6 @@ public class FilterManager implements FilterService
     @Override
     public void add(Filter filter)
     {
-        filter.setId(UUID.randomUUID());
         repository.save(filter);
     }
 
@@ -72,5 +70,10 @@ public class FilterManager implements FilterService
     public void deleteAllByModelId(UUID modelId)
     {
         repository.deleteAllByModelId(modelId);
+    }
+    @Override
+    public Filter getByCarId(UUID carId)
+    {
+        return repository.findByCarId(carId);
     }
 }

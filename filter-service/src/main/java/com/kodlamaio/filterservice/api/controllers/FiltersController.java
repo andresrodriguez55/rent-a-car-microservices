@@ -3,7 +3,6 @@ package com.kodlamaio.filterservice.api.controllers;
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import com.kodlamaio.filterservice.business.dto.responses.GetAllFiltersResponse;
 import com.kodlamaio.filterservice.business.dto.responses.GetFilterResponse;
-import com.kodlamaio.filterservice.entities.Filter;
 import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
