@@ -1,6 +1,7 @@
 package com.kodlamaio.filterservice.business.kafka.consumer;
 
-import com.kodlamaio.commonpackage.events.Rental.RentalCreatedEvent;
+import com.kodlamaio.commonpackage.events.rental.RentalCreatedEvent;
+import com.kodlamaio.commonpackage.events.rental.RentalDeletedEvent;
 import com.kodlamaio.filterservice.business.abstracts.FilterService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -23,5 +24,16 @@ public class RentalConsumer
         filter.setState("RENTED");
         service.add(filter);
         log.info("Rental created event consumed {}", event);
+    }
+
+    @KafkaListener(
+            topics = "rental-deleted",
+            groupId = "filter-rental-delete"
+    )
+    public void consume(RentalDeletedEvent event) {
+        var filter = service.getByCarId(event.getCarId());
+        filter.setState("AVAILABLE");
+        service.add(filter);
+        log.info("Rental deleted event consumed {}", event);
     }
 }

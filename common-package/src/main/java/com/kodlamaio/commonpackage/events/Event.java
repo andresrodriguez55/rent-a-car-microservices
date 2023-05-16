@@ -1,2 +1,5 @@
-package com.kodlamaio.commonpackage.events;public interface Event {
+package com.kodlamaio.commonpackage.events;
+
+public interface Event
+{
 }

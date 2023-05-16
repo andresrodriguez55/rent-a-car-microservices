@@ -5,117 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fd8707-b556-4ced-88f8-34460f6f7c40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_4_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_4_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/configuration/exceptions/RestExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/Rental/RentalCreatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/ExceptionTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/exceptions/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/mappers/ModelMapperManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/results/ExceptionResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/RentalConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/abstracts/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/abstracts/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/abstracts/ModelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/rules/CarBusinessRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/kafka/consumer/RentalConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/clients/CarClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/controllers/RentalsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/abstracts/RentalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/concretes/RentalManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/dto/requests/CreateRentalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/dto/requests/UpdateRentalRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/dto/responses/CreateRentalResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/dto/responses/GetAllRentalsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/dto/responses/GetRentalResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/dto/responses/UpdateRentalResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/kafka/producer/RentalProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/rules/RentalBusinessRules.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/entities/Rental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/repository/RentalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_annotations_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circuitbreaker_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_circularbuffer_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_consumer_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_core_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_framework_common_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_micrometer_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_ratelimiter_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_retry_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring6_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_spring_boot3_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_resilience4j_resilience4j_timelimiter_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_circuitbreaker_resilience4j_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_circuitbreaker_resilience4j_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/configuration/kafka/producer/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/rental/RentalDeletedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/dto/ClientResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/kafka/producer/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/clients/CarClientClientFallbackFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/clients/CarClientFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/clients/FeignClientConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/code/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/kodlamaio/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/test/java/com/code/apigateway/ApiGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/kodlamaio/apigateway/ApiGatewayApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-package/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/CommonPackageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/CommonPackageApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/configuration/mappers/ModelMapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/events/inventory/BrandDeletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/BrandDeletedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/events/inventory/CarCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/CarCreatedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/events/inventory/CarDeletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/CarDeletedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/events/inventory/ModelDeletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/ModelDeletedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/utils/annotations/NotFutureYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/annotations/NotFutureYear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/utils/annotations/NotFutureYearValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/annotations/NotFutureYearValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/utils/constants/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Regex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/utils/mappers/ModelMapperManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/code/commonpackage/utils/mappers/ModelMapperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/mappers/ModelMapperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/test/java/com/code/commonpackage/CommonPackageApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/test/java/com/kodlamaio/commonpackage/CommonPackageApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/com/code/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/kodlamaio/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery-server/src/test/java/com/code/discoveryserver/DiscoveryServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/test/java/com/kodlamaio/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/FilterServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/FilterServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/api/controllers/FiltersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/api/controllers/FiltersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/abstracts/FilterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/abstracts/FilterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/concretes/FilterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/concretes/FilterManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/dto/responses/GetAllFiltersResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/dto/responses/GetAllFiltersResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/dto/responses/GetFilterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/dto/responses/GetFilterResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/configuration/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/configuration/mappers/ModelMapperConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/entities/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/entities/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/kafka/consumer/InventoryConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/InventoryConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/repository/FilterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/repository/FilterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filter-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/InventoryServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/api/controllers/BrandsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/api/controllers/BrandsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/api/controllers/CarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/api/controllers/CarsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/api/controllers/ModelsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/api/controllers/ModelsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/abstracts/BrandService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/abstracts/CarService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/abstracts/ModelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/concretes/BrandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/BrandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/concretes/CarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/CarManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/concretes/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/ModelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/requests/create/CreateBrandRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/requests/create/CreateBrandRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/requests/create/CreateCarRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/requests/create/CreateCarRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/requests/create/CreateModelRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/requests/create/CreateModelRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/requests/update/UpdateBrandRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/requests/update/UpdateBrandRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/requests/update/UpdateCarRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/requests/update/UpdateCarRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/requests/update/UpdateModelRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/requests/update/UpdateModelRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/create/CreateBrandResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/create/CreateBrandResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/create/CreateCarResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/create/CreateCarResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/create/CreateModelResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/create/CreateModelResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/get/GetAllBrandsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/get/GetAllBrandsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/get/GetAllCarsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/get/GetAllCarsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/get/GetAllModelsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/get/GetAllModelsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/get/GetBrandResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/get/GetBrandResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/get/GetCarResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/get/GetCarResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/get/GetModelResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/get/GetModelResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/update/UpdateBrandResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/update/UpdateBrandResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/update/UpdateCarResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/update/UpdateCarResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/dto/responses/update/UpdateModelResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/dto/responses/update/UpdateModelResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/rules/BrandBusinessRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/rules/BrandBusinessRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/rules/CarBusinessRules.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/business/rules/ModelBusinessRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/rules/ModelBusinessRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/configuration/mappers/ModelMapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/entities/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/entities/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/entities/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/entities/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/entities/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/entities/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/entities/enums/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/entities/enums/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/kafka/producer/InventoryProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/kafka/producer/InventoryProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/repository/BrandRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/repository/BrandRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/repository/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/code/inventoryservice/repository/ModelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/repository/ModelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/test/java/com/code/inventoryservice/InventoryServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/kodlamaio/inventoryservice/InventoryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/Rental/RentalCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/rental/RentalCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/BrandDeletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/BrandDeletedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/CarCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/CarCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/CarDeletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/CarDeletedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/ModelDeletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/inventory/ModelDeletedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/RentalConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/RentalConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/api/controllers/CarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/api/controllers/CarsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/abstracts/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/abstracts/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/BrandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/BrandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/CarManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/CarManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/business/concretes/ModelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/kafka/consumer/RentalConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/kafka/consumer/RentalConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/kafka/producer/InventoryProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/clients/CarClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/clients/CarClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/controllers/RentalsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/api/controllers/RentalsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/abstracts/RentalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/abstracts/RentalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/concretes/RentalManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/concretes/RentalManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/kafka/producer/RentalProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/rules/RentalBusinessRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/rules/RentalBusinessRules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +70,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9cb4a07d-2661-4c61-b5f7-4e3faa2ef9b1" />
+        <option name="url" value="https://github.com/andresrodriguez55/rent-a-car-microservices.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -154,7 +105,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/Universidad/Algoritmos/Turkcell GYGY/Codigos/microservices/rental-service/src/main/java/com/code/rentalservice",
+    "last_opened_file_path": "E:/Universidad/Algoritmos/Turkcell GYGY/Codigos/microservices",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -176,7 +127,7 @@
       <recent name="com.codes.commonpackage.events.Rental" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RentalServiceApplication">
+  <component name="RunManager" selected="Application.InventoryServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kodlamaio.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -244,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.RentalServiceApplication" />
-        <item itemvalue="Application.com.code.inventoryservice.InventoryServiceApplication" />
-        <item itemvalue="Application.FilterServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.FilterServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -262,5 +213,16 @@
       <updated>1682839720673</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

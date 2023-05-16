@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/inventory-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/inventoryservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/inventoryservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rental-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rental-service/src/main/resources" charset="UTF-8" />
   </component>
