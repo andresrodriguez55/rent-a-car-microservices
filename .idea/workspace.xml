@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43fd8707-b556-4ced-88f8-34460f6f7c40" name="Changes" comment="maintenance service; kafka events, rest calls added">
+    <list default="true" id="43fd8707-b556-4ced-88f8-34460f6f7c40" name="Changes" comment="docker mysql fixed">
+      <change afterPath="$PROJECT_DIR$/filter-service/src/main/java/com/kodlamaio/filterservice/business/kafka/consumer/MaintenanceConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "E:/Universidad/Algoritmos/Turkcell GYGY/Codigos/microservices/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/api/clients",
+    "last_opened_file_path": "E:/Universidad/Algoritmos/Turkcell GYGY/Codigos/microservices",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -87,13 +86,13 @@
       <recent name="com.codes.commonpackage.events.Rental" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaintenanceServiceApplication">
-    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kodlamaio.apigateway.ApiGatewayApplication" />
-      <module name="api-gateway" />
+  <component name="RunManager" selected="Application.FilterServiceApplication">
+    <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kodlamaio.discoveryserver.DiscoveryServerApplication" />
+      <module name="discovery-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kodlamaio.apigateway.*" />
+          <option name="PATTERN" value="com.kodlamaio.discoveryserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kodlamaio.discoveryserver.DiscoveryServerApplication" />
-      <module name="discovery-server" />
+    <configuration name="FilterServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kodlamaio.filterservice.FilterServiceApplication" />
+      <module name="filter-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kodlamaio.discoveryserver.*" />
+          <option name="PATTERN" value="com.kodlamaio.filterservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FilterServiceApplication" />
         <item itemvalue="Application.MaintenanceServiceApplication" />
+        <item itemvalue="Application.RentalServiceApplication" />
         <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.RentalServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684577764652</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="docker mysql fixed">
+      <created>1684582127189</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684582127189</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +216,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maintenance service added" />
     <MESSAGE value="maintenance service; kafka events, rest calls added" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintenance service; kafka events, rest calls added" />
+    <MESSAGE value="docker mysql fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker mysql fixed" />
   </component>
 </project>
