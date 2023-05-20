@@ -10,14 +10,20 @@ services:
 
   mysql:
     image: mysql
+    container_name: maintenancedb
     restart: always
     environment:
-      MYSQL_DATABASE: maintenancedb
-      MYSQL_ROOT_PASSWORD: root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=maintenancedb
+      - MYSQL_USER=mysql
+      - MYSQL_TCP_PORT=3307
+      - VIRTUAL_PORT=3307
     ports:
       - '3307:3307'
+    expose:
+      - 3307
     volumes:
-      - mysql_data:/var/lib/mysql
+      - mysqldb_data:/data/db
 
   mongodb:
     container_name: turkcell-filterdb
@@ -29,4 +35,4 @@ services:
 volumes:
   kafka_data:
   mongodb_data:
-  mysql_data:
+  mysqldb_data:

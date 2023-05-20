@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43fd8707-b556-4ced-88f8-34460f6f7c40" name="Changes" comment="maintenance service added">
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceCompletedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceCreatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceDeletedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/events/maintenance/MaintenanceUpdatedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/kodlamaio/inventoryservice/kafka/consumer/MaintenanceConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/api/clients/CarClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/api/clients/CarClientFallback.java" afterDir="false" />
+    <list default="true" id="43fd8707-b556-4ced-88f8-34460f6f7c40" name="Changes" comment="maintenance service; kafka events, rest calls added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-package/src/main/java/com/kodlamaio/commonpackage/utils/constants/Paths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/MaintenanceServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/MaintenanceServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/api/controllers/MaintenancesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/api/controllers/MaintenancesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/business/abstracts/MaintenanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/business/abstracts/MaintenanceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/business/concretes/MaintenanceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/business/concretes/MaintenanceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/business/rules/MaintenanceBusinessRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/business/rules/MaintenanceBusinessRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/entities/Maintenance.java" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/java/com/kodlamaio/maintenanceservice/entities/Maintenance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maintenance-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/maintenance-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +87,7 @@
       <recent name="com.codes.commonpackage.events.Rental" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InventoryServiceApplication">
+  <component name="RunManager" selected="Application.MaintenanceServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kodlamaio.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -170,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.MaintenanceServiceApplication" />
+        <item itemvalue="Application.InventoryServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.RentalServiceApplication" />
@@ -201,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684569366188</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="maintenance service; kafka events, rest calls added">
+      <created>1684577764652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684577764652</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +209,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maintenance service added" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintenance service added" />
+    <MESSAGE value="maintenance service; kafka events, rest calls added" />
+    <option name="LAST_COMMIT_MESSAGE" value="maintenance service; kafka events, rest calls added" />
   </component>
 </project>

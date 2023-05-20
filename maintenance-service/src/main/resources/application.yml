@@ -2,16 +2,16 @@ spring:
   application:
     name: maintenance-service
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/maintenancedb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/maintenancedb
     username: root
-    password: rootroot1@
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.MySQL8Dialect
   kafka:
     producer:
       bootstrap-servers: http://localhost:9092
