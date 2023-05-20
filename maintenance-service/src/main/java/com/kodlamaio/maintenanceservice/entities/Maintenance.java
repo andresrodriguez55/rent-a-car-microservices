@@ -24,5 +24,5 @@ public class Maintenance
     private boolean isCompleted;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
-    private UUID carID;
+    private UUID carId;
 }

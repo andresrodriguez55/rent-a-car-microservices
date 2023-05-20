@@ -35,7 +35,7 @@ public class MaintenancesController
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public CreateMaintenanceResponse add(@RequestBody CreateMaintenanceRequest request)
+    public CreateMaintenanceResponse add(@RequestBody CreateMaintenanceRequest request) throws InterruptedException
     {
         return service.add(request);
     }

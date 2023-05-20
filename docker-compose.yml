@@ -12,8 +12,8 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_DATABASE: 'maintenancedb'
-      MYSQL_ROOT_PASSWORD: 'mysql'
+      MYSQL_DATABASE: maintenancedb
+      MYSQL_ROOT_PASSWORD: root
     ports:
       - '3307:3307'
     volumes:

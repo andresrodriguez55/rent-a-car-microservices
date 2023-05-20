@@ -2,14 +2,21 @@ spring:
   application:
     name: maintenance-service
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/maintenancedb
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/maintenancedb
+    username: root
+    password: rootroot1@
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+  kafka:
+    producer:
+      bootstrap-servers: http://localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 eureka:
   client:

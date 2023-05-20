@@ -15,7 +15,7 @@ public interface MaintenanceService
     List<GetAllMaintenanceResponse> getAll();
     GetMaintenanceResponse getById(UUID id);
     GetMaintenanceResponse returnCarFromMaintenance(UUID carId);
-    CreateMaintenanceResponse add(CreateMaintenanceRequest request);
+    CreateMaintenanceResponse add(CreateMaintenanceRequest request) throws InterruptedException;
     UpdateMaintenanceResponse update(UUID id, UpdateMaintenanceRequest request);
     void delete(UUID id);
 }
