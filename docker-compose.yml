@@ -8,6 +8,16 @@ services:
     volumes:
       - kafka_data:/apt/kafka/kafka-logs
 
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'maintenancedb'
+      MYSQL_ROOT_PASSWORD: 'mysql'
+    ports:
+      - '3307:3307'
+    volumes:
+      - mysql_data:/var/lib/mysql
 
   mongodb:
     container_name: turkcell-filterdb
@@ -19,3 +29,4 @@ services:
 volumes:
   kafka_data:
   mongodb_data:
+  mysql_data:
