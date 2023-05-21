@@ -56,7 +56,7 @@ public class PaymentsController
         service.delete(id);
     }
 
-    @GetMapping("/process-rental-payment")
+    @PostMapping("/process-rental-payment")
     public ClientResponse processRentalPayment(@RequestBody CreateRentalPaymentRequest request)
     {
         return service.processRentalPayment(request);
