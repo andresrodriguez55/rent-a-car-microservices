@@ -21,5 +21,11 @@ public class CreateRentalRequest
     private double dailyPrice;
     @Min(1)
     private int rentedForDays;
-    // TODO: Credit Card Information
+
+    // Credit Card Information
+    private String cardNumber;
+    private String cardHolder;
+    private int cardExpirationYear;
+    private int cardExpirationMonth;
+    private String cardCvv;
 }
