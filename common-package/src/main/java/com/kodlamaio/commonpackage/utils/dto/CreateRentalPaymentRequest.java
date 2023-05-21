@@ -17,17 +17,4 @@ public class CreateRentalPaymentRequest
     private int cardExpirationMonth;
     private String cardCvv;
     private double price;
-
-    @Override
-    public String toString()
-    {
-        return "{" +
-                "cardNumber:'" + cardNumber + '\'' +
-                ", cardHolder:'" + cardHolder + '\'' +
-                ", cardExpirationYear:" + cardExpirationYear +
-                ", cardExpirationMonth:" + cardExpirationMonth +
-                ", cardCvv:'" + cardCvv + '\'' +
-                ", price:" + price +
-                '}';
-    }
 }

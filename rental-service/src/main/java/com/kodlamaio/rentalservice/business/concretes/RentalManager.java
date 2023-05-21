@@ -67,7 +67,6 @@ public class RentalManager implements RentalService
         CreateRentalPaymentRequest paymentRequest = new CreateRentalPaymentRequest();
         mapper.forRequest().map(request, paymentRequest);
         paymentRequest.setPrice(getTotalPrice(rental));
-        System.err.println(rental.toString());
         rules.ensurePaymentIsProcessed(paymentRequest);
 
         repository.save(rental);
