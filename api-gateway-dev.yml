@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    metadata-map:
+      serviceId: inventory-service
+    instance-id: ${spring.application.name}:${random.value}
+    prefer-ip-address: true
+server:
+  port: 9010
