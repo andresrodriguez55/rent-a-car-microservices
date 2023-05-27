@@ -3,8 +3,8 @@ spring:
     name: invoice-service
   data:
     mongodb:
-      database: invoicedb
       uri: mongodb://localhost:27018
+      database: invoicedb
   kafka:
     consumer:
       auto-offset-reset: earliest
