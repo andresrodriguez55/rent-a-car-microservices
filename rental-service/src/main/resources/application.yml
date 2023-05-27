@@ -1,41 +1,8 @@
 spring:
   application:
     name: rental-service
-  datasource:
-    password: postgres
-    url: jdbc:postgresql://localhost:5432/rentaldb-t1
-    username: postgres
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-  kafka:
-    producer:
-      bootstrap-servers: http://localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   cloud:
-    openfeign:
-      circuitbreaker:
-        enabled: true
-
-resilience4j:
-  retry:
-    instances:
-      rentalServiceCallsInventory:
-        maxRetryAttempts: 20
-        waitDuration: 10
-
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-  instance:
-    instance-id: ${spring.application.name}:${random.value}
-    prefer-ip-address: true
-server:
-  port: 0
+    config:
+      profile: dev
+  config:
+    import: configserver:http://localhost:8888

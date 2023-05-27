@@ -6,36 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
         <module name="inventory-service" />
         <module name="discovery-server" />
         <module name="payment-service" />
         <module name="maintenance-service" />
         <module name="common-package" />
+        <module name="invoice-service" />
         <module name="api-gateway" />
         <module name="filter-service" />
         <module name="rental-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api-gateway" target="17" />
-      <module name="common-package" target="17" />
-      <module name="discovery-server" target="17" />
-      <module name="filter-service" target="17" />
-      <module name="inventory-service" target="17" />
       <module name="inventoryservice" target="17" />
-      <module name="maintenance-service" target="17" />
-      <module name="payment-service" target="17" />
-      <module name="rental-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="common-package" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
       <module name="filter-service" options="-parameters" />
       <module name="inventory-service" options="-parameters" />
       <module name="inventoryservice" options="-parameters" />
+      <module name="invoice-service" options="-parameters" />
       <module name="maintenance-service" options="-parameters" />
       <module name="payment-service" options="-parameters" />
       <module name="rental-service" options="-parameters" />

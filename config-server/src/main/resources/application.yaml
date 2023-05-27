@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        default-label: server-config
+        git:
+          uri: https://github.com/andresrodriguez55/rent-a-car-microservices
+server:
+  port: 8888

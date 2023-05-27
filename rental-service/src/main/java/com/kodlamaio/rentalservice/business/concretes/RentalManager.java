@@ -2,9 +2,12 @@ package com.kodlamaio.rentalservice.business.concretes;
 
 import com.kodlamaio.commonpackage.events.rental.RentalCreatedEvent;
 import com.kodlamaio.commonpackage.events.rental.RentalDeletedEvent;
+import com.kodlamaio.commonpackage.events.rentalPayment.RentalPaymentCreatedEvent;
 import com.kodlamaio.commonpackage.utils.dto.CreateRentalPaymentRequest;
+import com.kodlamaio.commonpackage.utils.dto.responses.CarClientResponse;
 import com.kodlamaio.commonpackage.utils.kafka.producer.KafkaProducer;
 import com.kodlamaio.commonpackage.utils.mappers.ModelMapperService;
+import com.kodlamaio.rentalservice.api.clients.CarClient;
 import com.kodlamaio.rentalservice.business.abstracts.RentalService;
 import com.kodlamaio.rentalservice.business.dto.requests.CreateRentalRequest;
 import com.kodlamaio.rentalservice.business.dto.requests.UpdateRentalRequest;
@@ -29,6 +32,7 @@ public class RentalManager implements RentalService
     private final RentalRepository repository;
     private final ModelMapperService mapper;
     private final RentalBusinessRules rules;
+    private final CarClient carClient;
 
     private final KafkaProducer producer;
 
@@ -71,6 +75,14 @@ public class RentalManager implements RentalService
 
         repository.save(rental);
         sendKafkaRentalCreatedEvent(request.getCarId());
+
+        CarClientResponse carClientResponse = carClient.getCar(request.getCarId());
+        RentalPaymentCreatedEvent rentalPaymentCreatedEvent = new RentalPaymentCreatedEvent();
+        mapper.forResponse().map(rentalPaymentCreatedEvent, carClientResponse);
+        mapper.forResponse().map(rentalPaymentCreatedEvent, request);
+        mapper.forResponse().map(rentalPaymentCreatedEvent, rental);
+        sendKafkaRentalPaymentCreatedEvent(rentalPaymentCreatedEvent);
+
         var response = mapper.forResponse().map(rental, CreateRentalResponse.class);
 
         return response;
@@ -111,5 +123,10 @@ public class RentalManager implements RentalService
     private void sendKafkaRentalDeletedEvent(UUID carId)
     {
         producer.sendMessage(new RentalDeletedEvent(carId), "rental-deleted");
+    }
+
+    private void sendKafkaRentalPaymentCreatedEvent(RentalPaymentCreatedEvent event)
+    {
+        producer.sendMessage(event, "rental-payment-created");
     }
 }

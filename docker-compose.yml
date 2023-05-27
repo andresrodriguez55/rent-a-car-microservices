@@ -32,6 +32,16 @@ services:
       - "27017:27017"
     volumes:
       - mongodb_data:/data/db
+
+  mongodb2:
+    container_name: turkcell-invoicedb
+    image: mongo
+    command: mongod --port 27018
+    ports:
+      - "27018:27018"
+    volumes:
+      - mongodb_data:/data/turkcell-invoicedb
+
 volumes:
   kafka_data:
   mongodb_data:

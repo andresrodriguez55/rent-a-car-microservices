@@ -2,7 +2,8 @@ package com.kodlamaio.inventoryservice.business.concretes;
 
 import com.kodlamaio.commonpackage.events.inventory.CarCreatedEvent;
 import com.kodlamaio.commonpackage.events.inventory.CarDeletedEvent;
-import com.kodlamaio.commonpackage.utils.dto.ClientResponse;
+import com.kodlamaio.commonpackage.utils.dto.responses.CarClientResponse;
+import com.kodlamaio.commonpackage.utils.dto.responses.ClientResponse;
 import com.kodlamaio.commonpackage.utils.exceptions.BusinessException;
 import com.kodlamaio.commonpackage.utils.kafka.producer.KafkaProducer;
 import com.kodlamaio.commonpackage.utils.mappers.ModelMapperService;
@@ -50,6 +51,16 @@ public class CarManager implements CarService
         rules.checkIfCarExists(id);
         var car = repository.findById(id).orElseThrow();
         var response = mapper.forResponse().map(car, GetCarResponse.class);
+
+        return response;
+    }
+
+    @Override
+    public CarClientResponse getCarForInvoice(UUID id)
+    {
+        rules.checkIfCarExists(id);
+        var car = repository.findById(id).orElseThrow();
+        var response = mapper.forResponse().map(car, CarClientResponse.class);
 
         return response;
     }
