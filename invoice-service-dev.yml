@@ -3,8 +3,8 @@ spring:
     name: invoice-service
   data:
     mongodb:
-      database: turkcell-filterdb
-      uri: mongodb://localhost:27017
+      database: turkcell-invoicedb
+      uri: mongodb://localhost:27018
   kafka:
     consumer:
       auto-offset-reset: earliest
