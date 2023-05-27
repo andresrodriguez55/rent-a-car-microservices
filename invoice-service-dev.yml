@@ -2,9 +2,9 @@ spring:
   application:
     name: invoice-service
   data:
-    mongodb2:
-      database: turkcell-invoicedb
-      uri: mongodb://localhost:27018
+    mongodb:
+      database: sgdggdgdfdsfdsgds
+      uri: mongodb://localhost:27017
   kafka:
     consumer:
       auto-offset-reset: earliest
