@@ -2,7 +2,8 @@ spring:
   application:
     name: invoice-service
   data:
-    
+    mongodb:
+      uri: mongodb://localhost:27018
   kafka:
     consumer:
       auto-offset-reset: earliest
