@@ -56,9 +56,9 @@ public class CarsController {
          return service.checkIfCarAvailable(id);
     }
 
-    @GetMapping("/get-car-for-invoice/{id}")
-    public CarClientResponse getCarForInvoice(@PathVariable UUID id)
+    @GetMapping("/get-car-for-invoice/{carId}")
+    public CarClientResponse getCarForInvoice(@PathVariable UUID carId)
     {
-        return service.getCarForInvoice(id);
+        return service.getCarForInvoice(carId);
     }
 }

@@ -22,6 +22,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -73,14 +74,20 @@ public class RentalManager implements RentalService
         paymentRequest.setPrice(getTotalPrice(rental));
         rules.ensurePaymentIsProcessed(paymentRequest);
 
-        repository.save(rental);
-        sendKafkaRentalCreatedEvent(request.getCarId());
-
         CarClientResponse carClientResponse = carClient.getCar(request.getCarId());
         RentalPaymentCreatedEvent rentalPaymentCreatedEvent = new RentalPaymentCreatedEvent();
-        mapper.forResponse().map(rentalPaymentCreatedEvent, carClientResponse);
-        mapper.forResponse().map(rentalPaymentCreatedEvent, request);
-        mapper.forResponse().map(rentalPaymentCreatedEvent, rental);
+        rentalPaymentCreatedEvent.setCardHolder(request.getCardHolder());
+        rentalPaymentCreatedEvent.setModelName(carClientResponse.getModelName());
+        rentalPaymentCreatedEvent.setBrandName(carClientResponse.getBrandName());
+        rentalPaymentCreatedEvent.setPlate(carClientResponse.getPlate());
+        rentalPaymentCreatedEvent.setModelYear(carClientResponse.getModelYear());
+        rentalPaymentCreatedEvent.setDailyPrice(request.getDailyPrice());
+        rentalPaymentCreatedEvent.setTotalPrice(getTotalPrice(rental));
+        rentalPaymentCreatedEvent.setRentedForDays(rental.getRentedForDays());
+        rentalPaymentCreatedEvent.setRentedAt(LocalDateTime.now());
+
+        repository.save(rental);
+        sendKafkaRentalCreatedEvent(request.getCarId());
         sendKafkaRentalPaymentCreatedEvent(rentalPaymentCreatedEvent);
 
         var response = mapper.forResponse().map(rental, CreateRentalResponse.class);

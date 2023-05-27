@@ -9,11 +9,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Document
-@Getter
 @Setter
+@Getter
+@Document
+@NoArgsConstructor
+@AllArgsConstructor
 public class Invoice
 {
     @Id
