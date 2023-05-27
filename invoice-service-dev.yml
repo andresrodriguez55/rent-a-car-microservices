@@ -4,7 +4,7 @@ spring:
   data:
     mongodb:
       database: turkcell-invoicedb
-      uri: mongodb://localhost:27018
+      uri: mongodb://localhost:27018/turkcell-invoicedb
   kafka:
     consumer:
       auto-offset-reset: earliest
