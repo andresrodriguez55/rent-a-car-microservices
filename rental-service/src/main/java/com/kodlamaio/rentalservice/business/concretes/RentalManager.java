@@ -76,14 +76,9 @@ public class RentalManager implements RentalService
 
         CarClientResponse carClientResponse = carClient.getCar(request.getCarId());
         RentalPaymentCreatedEvent rentalPaymentCreatedEvent = new RentalPaymentCreatedEvent();
-        rentalPaymentCreatedEvent.setCardHolder(request.getCardHolder());
-        rentalPaymentCreatedEvent.setModelName(carClientResponse.getModelName());
-        rentalPaymentCreatedEvent.setBrandName(carClientResponse.getBrandName());
-        rentalPaymentCreatedEvent.setPlate(carClientResponse.getPlate());
-        rentalPaymentCreatedEvent.setModelYear(carClientResponse.getModelYear());
-        rentalPaymentCreatedEvent.setDailyPrice(request.getDailyPrice());
-        rentalPaymentCreatedEvent.setTotalPrice(getTotalPrice(rental));
-        rentalPaymentCreatedEvent.setRentedForDays(rental.getRentedForDays());
+        mapper.forRequest().map(request, rentalPaymentCreatedEvent);
+        mapper.forRequest().map(carClientResponse, rentalPaymentCreatedEvent);
+        mapper.forRequest().map(rental, rentalPaymentCreatedEvent);
         rentalPaymentCreatedEvent.setRentedAt(LocalDateTime.now());
 
         repository.save(rental);

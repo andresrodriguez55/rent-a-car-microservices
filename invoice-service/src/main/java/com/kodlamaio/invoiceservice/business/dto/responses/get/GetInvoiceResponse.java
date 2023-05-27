@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,7 +13,7 @@ import java.util.UUID;
 @Setter
 public class GetInvoiceResponse
 {
-    private UUID id;
+    private String id;
     private String cardHolder;
     private String modelName;
     private String brandName;
