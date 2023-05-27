@@ -3,7 +3,7 @@ spring:
     name: invoice-service
   data:
     mongodb:
-      database: m-turkcell-invoicedb
+      database: "m-turkcell-invoicedb"
       uri: mongodb://localhost:27018
   kafka:
     consumer:
