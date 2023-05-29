@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="43fd8707-b556-4ced-88f8-34460f6f7c40" name="Changes" comment="rent - payment service feignclient post fixed v2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoice-service/src/main/java/com/kodlamaio/invoiceservice/business/dto/responses/get/GetAllInvoicesResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/invoice-service/src/main/java/com/kodlamaio/invoiceservice/business/dto/responses/get/GetAllInvoicesResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoice-service/src/main/java/com/kodlamaio/invoiceservice/business/dto/responses/get/GetInvoiceResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/invoice-service/src/main/java/com/kodlamaio/invoiceservice/business/dto/responses/get/GetInvoiceResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/concretes/RentalManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/rental-service/src/main/java/com/kodlamaio/rentalservice/business/concretes/RentalManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Application.RentalServiceApplication">
+  <component name="RunManager" selected="Application.InvoiceServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kodlamaio.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
