@@ -40,6 +40,7 @@
 - Spring Data was used for the use of JPA (Object Relational Mapping).
 - Added Keycloak for Authorization and Authentication.
 - Zipkin has been added to visually display calls and interactions of services.
+- Prometheus and Grafana have been used to graph the resource usage of each microservice.
 
 # 4. Explanation of Project Modules
 
@@ -73,5 +74,14 @@ The API package counts as the UI layer. Here are the controllers. These include 
 - Many constructs in Java (like Enums and Validators) are well demonstrated to be used and learned.
 - Added Keycloak for Authorization and Authentication.
 - Zipkin has been added to visually display calls and interactions of services.
+- Prometheus and Grafana have been used to graph the resource usage of each microservice.
+
+# 7. Architecture 
 
 ![](https://drive.google.com/uc?id=19vd8Ta1zTrwO_FlDGp8uPYDGeWl_S_9Y)
+
+# 8. Screenshots of Zipkin, Prometheus & Grafana
+
+![](https://drive.google.com/uc?id=1YNeigiOjvEb64BxOQWtTUHxP8aBRH5RU)
+![](https://drive.google.com/uc?id=1AGyuplaBLW1JcA79wOgptjAWesRaQKb7)
+![](https://drive.google.com/uc?id=1PNNAOJdQp2stembkOpK48sKCy73wDion)
