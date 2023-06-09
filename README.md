@@ -38,6 +38,8 @@
 - Openfeign is used for rest calls. Resillience4j was used to implement the Retry pattern.
 - SLF4J was used to keep logs.
 - Spring Data was used for the use of JPA (Object Relational Mapping).
+- Added Keycloak for Authorization and Authentication.
+- Zipkin has been added to visually display calls and interactions of services.
 
 # 4. Explanation of Project Modules
 
