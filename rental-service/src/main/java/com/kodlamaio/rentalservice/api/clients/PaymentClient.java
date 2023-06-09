@@ -1,7 +1,7 @@
 package com.kodlamaio.rentalservice.api.clients;
 
 import com.kodlamaio.commonpackage.utils.dto.responses.ClientResponse;
-import com.kodlamaio.commonpackage.utils.dto.CreateRentalPaymentRequest;
+import com.kodlamaio.commonpackage.utils.dto.requests.CreateRentalPaymentRequest;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 

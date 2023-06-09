@@ -1,4 +1,4 @@
-package com.kodlamaio.inventoryservice.kafka.consumer;
+package com.kodlamaio.inventoryservice.business.kafka.consumer;
 
 import com.kodlamaio.commonpackage.events.maintenance.MaintenanceCompletedEvent;
 import com.kodlamaio.commonpackage.events.maintenance.MaintenanceCreatedEvent;

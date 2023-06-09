@@ -1,6 +1,6 @@
 package com.kodlamaio.invoiceservice.business.kafka.consumer;
 
-import com.kodlamaio.commonpackage.events.rentalPayment.RentalPaymentCreatedEvent;
+import com.kodlamaio.commonpackage.events.invoice.CreateInvoiceEvent;
 import com.kodlamaio.commonpackage.utils.mappers.ModelMapperService;
 import com.kodlamaio.invoiceservice.business.abstracts.InvoiceService;
 import com.kodlamaio.invoiceservice.entities.Invoice;
@@ -19,13 +19,13 @@ public class RentalConsumer
 
     @KafkaListener
     (
-            topics = "rental-payment-created",
-            groupId = "rental-payment-create"
+            topics = "create-invoice",
+            groupId = "rental-invoice-create"
     )
-    public void consume(RentalPaymentCreatedEvent event)
+    public void consume(CreateInvoiceEvent event)
     {
         var invoice = mapper.forRequest().map(event, Invoice.class);
         service.add(invoice);
-        log.info("Rental created event consumed {}", event);
+        log.info("Create invoice event consumed {}", event);
     }
 }

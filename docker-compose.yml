@@ -8,6 +8,24 @@ services:
     volumes:
       - kafka_data:/apt/kafka/kafka-logs
 
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    command: start-dev
+    volumes:
+      - .:/apt/jboss/keycloak/imports
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+
   mysql:
     image: mysql
     container_name: maintenancedb

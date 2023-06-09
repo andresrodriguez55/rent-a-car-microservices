@@ -1,7 +1,7 @@
 package com.kodlamaio.paymentservice.api.controllers;
 
 import com.kodlamaio.commonpackage.utils.dto.responses.ClientResponse;
-import com.kodlamaio.commonpackage.utils.dto.CreateRentalPaymentRequest;
+import com.kodlamaio.commonpackage.utils.dto.requests.CreateRentalPaymentRequest;
 import com.kodlamaio.paymentservice.business.abstracts.PaymentService;
 import com.kodlamaio.paymentservice.business.dto.requests.create.CreatePaymentRequest;
 import com.kodlamaio.paymentservice.business.dto.requests.update.UpdatePaymentRequest;

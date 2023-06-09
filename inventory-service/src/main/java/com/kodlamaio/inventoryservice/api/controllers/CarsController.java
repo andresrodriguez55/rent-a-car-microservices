@@ -1,5 +1,6 @@
 package com.kodlamaio.inventoryservice.api.controllers;
 
+import com.kodlamaio.commonpackage.utils.constants.Roles;
 import com.kodlamaio.commonpackage.utils.dto.responses.CarClientResponse;
 import com.kodlamaio.commonpackage.utils.dto.responses.ClientResponse;
 import com.kodlamaio.inventoryservice.business.abstracts.CarService;
@@ -12,6 +13,9 @@ import com.kodlamaio.inventoryservice.business.dto.responses.update.UpdateCarRes
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PostAuthorize;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,11 +28,14 @@ public class CarsController {
     private final CarService service;
 
     @GetMapping
+    @PreAuthorize(Roles.AdminOrModerator)
+    @Secured("ROLE_admin")
     public List<GetAllCarsResponse> getAll() {
         return service.getAll();
     }
 
     @GetMapping("/{id}")
+    @PostAuthorize(Roles.AdminOrModerator + " ||  returnObject.modelYear = 2019")
     public GetCarResponse getById(@PathVariable UUID id) {
         return service.getById(id);
     }

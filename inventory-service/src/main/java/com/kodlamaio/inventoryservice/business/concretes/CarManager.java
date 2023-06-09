@@ -61,6 +61,7 @@ public class CarManager implements CarService
         rules.checkIfCarExists(id);
         var car = repository.findById(id).orElseThrow();
         var response = mapper.forResponse().map(car, CarClientResponse.class);
+        response.setSuccess(true);
 
         return response;
     }
