@@ -26,6 +26,30 @@ services:
     ports:
       - "9411:9411"
 
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - monitor-net
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - grafana_config:/etc/grafana
+    networks:
+      - monitor-net
+
   mysql:
     image: mysql
     container_name: maintenancedb
@@ -61,6 +85,12 @@ services:
       - mongodb_data:/data/turkcell-invoicedb
 
 volumes:
+  grafana_data:
+  grafana_config:
   kafka_data:
   mongodb_data:
   mysqldb_data:
+
+networks:
+  monitor-net:
+    driver: bridge
